@@ -1,4 +1,4 @@
-##Skje
+
 #include <cstring>
 #include <vector>
 #include <iostream>
