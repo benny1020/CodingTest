@@ -2,7 +2,7 @@
 # 2020 KAKAO BLIND RECRUITMENT
 # Level 2 괄호 변환
 
-def is_right(p):
+def is_right(p): #해당 괄호가 올바른 괄호인지 확인 -> 스택 사용
     stack = []
     for i in p:
         if i =="(":
@@ -14,12 +14,12 @@ def is_right(p):
                 stack.pop()
     return 1
 
-def sol(p):
+def sol(p): # 문제에 주어진대로 따라함, 재귀함수 사용
     if(p==""):
         return ""
     if(is_right(p)==1):
         return p
-    tmp = 0
+    tmp = 0 #u가 다 할당되었는지 확인용, 1인경우 할당완료
     left=0
     right=0
     u=[]
@@ -34,10 +34,10 @@ def sol(p):
             left = left+1
         else:
             right = right+1
-        if(left == right):
+        if(left == right): #left와 right 같은경우 u에 할당 끝
             tmp = 1
-    #print(u)
-    #print(v)
+    #print("u",u)
+    #print("v",v)
 
     if(is_right(u)):
         for i in sol(v):
@@ -46,7 +46,7 @@ def sol(p):
         return u
     else:
         ans.append('(')
-        #print(ans)
+        #print("ans",ans)
         for i in sol(v):
             ans.append(i)
         ans.append(')')
@@ -64,11 +64,11 @@ def sol(p):
 def solution(p):
     answer = ''
     ans = sol(p)
-    #print("ass",ans)
+    #print("ans",ans)
     for i in ans:
         if i == "(":
             answer = answer+"("
         else:
             answer = answer+")"
-    #print("asw",answer)
+    #print("answer",answer)
     return answer
