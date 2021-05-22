@@ -10,6 +10,7 @@ def is_alpha(ch):
     else:
         return 0
 
+
 if __name__ == "__main__":
     MAX_ALPHA=26
     str1 = "FRANCE"
