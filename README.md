@@ -11,5 +11,9 @@ prob_3 괄호 변환 LV2
 https://programmers.co.kr/learn/courses/30/lessons/60058
 
 # 210522
-prob_4 베스킨라빈스 31 실버4
+prob_4 베스킨라빈스31 실버4
 https://www.acmicpc.net/problem/20004
+
+# 210523
+prob_5 프린터큐 실버3
+https://www.acmicpc.net/problem/1966
