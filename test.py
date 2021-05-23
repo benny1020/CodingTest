@@ -1,2 +1,2 @@
-ch="a";
-print(ord(ch[0]))
+arr = [int(x) for x in input().split()]
+print(arr)
