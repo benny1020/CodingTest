@@ -17,3 +17,7 @@ https://www.acmicpc.net/problem/20004
 # 210523
 prob_5 프린터큐 실버3
 https://www.acmicpc.net/problem/1966
+
+# 210526
+prob_6 1로 만들기 실버3
+https://www.acmicpc.net/problem/1463
