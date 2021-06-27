@@ -21,3 +21,10 @@ https://www.acmicpc.net/problem/1966
 # 210526
 prob_6 1로 만들기 실버3
 https://www.acmicpc.net/problem/1463
+
+# 210623
+prob_8 가장 많은 글자 브론즈2
+https://www.acmicpc.net/problem/1371
+
+prob_9 방 번호 실버5
+https://www.acmicpc.net/problem/1475
