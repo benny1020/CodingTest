@@ -40,14 +40,18 @@ void sol(void)
 
     for (int i=k-2;i>=0;i--)
     {
-        if(dp[i]>max || i == 0)
+        if(dp[i]>max )
         {
-            for(int j=i+1;j<end;j++)
-            {
+            for(int j=i+1;j<=end;j++)
                 total +=(max-dp[j]);
-                end = i-1;
-                max = dp[i];
-            }
+            max = dp[i];
+            end = i-1;
+        }
+        if(i==0)
+        {
+            for(int j=i;j<=end;j++)
+                total +=(max-dp[j]);
+
         }
     }
     cout << total<<endl;
