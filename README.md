@@ -28,3 +28,10 @@ https://www.acmicpc.net/problem/1371
 
 prob_9 방 번호 실버5
 https://www.acmicpc.net/problem/1475
+
+# 210627
+prob_10 세 수
+https://www.acmicpc.net/problem/2985
+
+prob_11 주식
+https://www.acmicpc.net/problem/11501
