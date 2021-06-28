@@ -23,12 +23,10 @@
 
 """
 
-
 n = int(input())
-
+b = int(input())
+print (a,b)
 
 for i in range(n):
-    k = int(input())
-    li = [0 for i in range(k)]
-    for j in range(k):
-        li[j] = int(input())
+    b = int(input())
+    

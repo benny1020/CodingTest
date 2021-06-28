@@ -22,6 +22,7 @@
 각 테스트케이스 별로 최대 이익을 나타내는 정수 하나를 출력한다. 답은 부호있는 64bit 정수형으로 표현 가능하다.
 
 */
+
 #include <iostream>
 
 using namespace std;
@@ -51,7 +52,6 @@ void sol(void)
         {
             for(int j=i;j<=end;j++)
                 total +=(max-dp[j]);
-
         }
     }
     cout << total<<endl;
