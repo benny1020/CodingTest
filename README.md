@@ -42,3 +42,13 @@ https://www.acmicpc.net/problem/5576
 
 prob_13 제로
 https://www.acmicpc.net/problem/10773
+
+# 210701
+prob_14 세탁소 사장 동혁
+https://www.acmicpc.net/problem/2720
+
+prob_15 수리공 항승
+https://www.acmicpc.net/problem/1449
+
+
+
