@@ -35,3 +35,10 @@ https://www.acmicpc.net/problem/2985
 
 prob_11 주식
 https://www.acmicpc.net/problem/11501
+
+# 210628
+prob_12 콘테스트
+https://www.acmicpc.net/problem/5576
+
+prob_13 제로
+https://www.acmicpc.net/problem/10773
