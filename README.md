@@ -50,5 +50,12 @@ https://www.acmicpc.net/problem/2720
 prob_15 수리공 항승
 https://www.acmicpc.net/problem/1449
 
+# 210706 
+prob_16 대회 or 인턴 브론즈3
+https://www.acmicpc.net/problem/2875
+
+prob_17 잃어버린 괄호 실버2
+https://www.acmicpc.net/problem/1541
+
 
 
