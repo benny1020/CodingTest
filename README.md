@@ -57,5 +57,16 @@ https://www.acmicpc.net/problem/2875
 prob_17 잃어버린 괄호 실버2
 https://www.acmicpc.net/problem/1541
 
+# 210707
+prob_19 단축키 지정 실버3
+https://www.acmicpc.net/problem/1283
+
+# 210712
+prob_20 소수 단어 브론즈2
+https://www.acmicpc.net/problem/2153
+
+prob_21 소인수분해 실버4
+https://www.acmicpc.net/problem/11653
+
 
 
