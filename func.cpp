@@ -4,8 +4,7 @@ using namespace std;
 
 int main(void)
 {
-    int num = 7;
-    int * ptr = &num;
-    int ** dptr = &ptr;
-    cout << **dptr << endl;
+    char ch;
+    cin >> ch;
+    cout << int(ch) << endl;
 }
