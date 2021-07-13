@@ -68,5 +68,12 @@ https://www.acmicpc.net/problem/2153
 prob_21 소인수분해 실버4
 https://www.acmicpc.net/problem/11653
 
+# 210713
+prob_22 지뢰 찾기 브론즈1
+https://www.acmicpc.net/problem/1996
+
+prob_23 완전탐색-모의고사 LV1
+https://programmers.co.kr/learn/courses/30/lessons/42840
+
 
 
