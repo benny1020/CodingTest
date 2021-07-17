@@ -1,45 +1,115 @@
+/*
+You should use the standard input/output
+
+in order to receive a score properly.
+
+Do not use file input and output
+
+Please be very careful.
+*/
+
 #include <iostream>
 #include <cstring>
-
+#include <cmath>
 using namespace std;
 
-int main(void)
-{
-    int test_case;
-    int num;
-    int count;
+int Answer;
 
-    cin >> test_case;
-    for(int i=0;i<test_case;i++)
-    {
-        count = 0;
-        cin >> num;
-        int arr[num];
-        int check[num];
-        for(int j=0;j<num;j++)
-            cin >> arr[j];
-        int dp[num];
-        for(int j=0;j<num;j++)
+int main(int argc, char** argv)
+{
+	int T, test_case;
+	int len,t;
+	string str_b;
+	/*
+	   The freopen function below opens input.txt file in read only mode, and afterward,
+	   the program will read from input.txt file instead of standard(keyboard) input.
+	   To test your program, you may save input data in input.txt file,
+	   and use freopen function to read from the file when using cin function.
+	   You may remove the comment symbols(//) in the below statement and use it.
+	   Use #include<cstdio> or #include <stdio.h> to use the function in your program.
+	   But before submission, you must remove the freopen function or rewrite comment symbols(//).
+	 */
+
+	// freopen("input.txt", "r", stdin);
+
+	cin >> T;
+	for(test_case = 0; test_case  < T; test_case++)
+	{
+
+		cin >> len;
+        cin >> t;
+        int a[len];
+        for(int j=0;j<len;j++)
+            a[j] = 0;
+        cin >> str_b;
+
+        for(int j=0;j<len;j++)
         {
-            dp[j] = 0;
-            check[j] = 0;
-        }
-        for(int i=0;i<num;i++)
-        {
-            int k=i;
-            if(dp[i] == 1)
-                continue;
-            dp[i] = 1;
-            count++;
-            while(arr[k]+k <= num-1)
+            if(str_b[j] == '1')
             {
-                if(dp[k] ==1)
-                    count--; break;
-                dp[k]=1;
-                k=arr[k]+k;
+
+                if(j>t && j<=len-1-t) // 둘다 만족하는경우
+                {
+                    if(j+t >=len)
+                    {
+                        if(j-2*t>=0)
+                        {
+                            if(str_b[j-2*t] == '1')
+                                a[j-t]=1;
+                        }
+                        else
+                            a[j-t]=1;
+                    }
+                    else
+                    {
+                        if(a[j-t] == 0)
+                        {
+                            if(j+2*t<len)
+                            {
+                                if(str_b[j+2*t]=='1')
+                                    a[j+t]=1;
+                                else
+                                    a[j-t]=1;
+                            }
+                            else
+                                a[j+t]=1;
+
+                        }
+
+                    }
+
+                    continue;
+                }
+                if(j>t)
+                {
+                    if(j-2*t >=0)
+                    {
+                        if(str_b[j-2*t]=='1')
+                            a[j-t]=1;
+                    }
+                    else
+                        a[j-t] = 1;
+                }
+                if(j<=len-1-t)
+                {
+                    if(j+2*t <len)
+                    {
+                        if(str_b[j+2*t]=='1')
+                            a[j+t]=1;
+                    }
+                    else
+                        a[j+t] = 1;
+                }
             }
+
         }
-        cout << count << endl;
-    }
-    return 0;
+        cout << "Case #" << test_case+1 << endl;
+        Answer = 0;
+        for(int k=0;k<len;k++)
+            cout << a[k];
+        cout <<endl;
+
+	}
+
+	return 0;//Your program should return 0 on normal termination.
 }
