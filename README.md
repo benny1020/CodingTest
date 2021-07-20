@@ -79,6 +79,8 @@ https://programmers.co.kr/learn/courses/30/lessons/42840
 prob_24 행렬 연산 브론즈1
 https://www.acmicpc.net/problem/2740
 
-prob_25 
+prob_25 신규 아이디 추천  LV1
+https://programmers.co.kr/learn/courses/30/lessons/72410
+
 
 
