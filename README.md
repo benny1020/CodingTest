@@ -82,5 +82,12 @@ https://www.acmicpc.net/problem/2740
 prob_25 신규 아이디 추천  LV1
 https://programmers.co.kr/learn/courses/30/lessons/72410
 
+# 210727
+prob_26 더하기 사이클 브론즈1
+https://www.acmicpc.net/problem/1110
+
+prob_27 짝지어 제거하기 LV2
+https://programmers.co.kr/learn/courses/30/lessons/12973
+
 
 
