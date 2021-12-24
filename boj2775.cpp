@@ -13,7 +13,7 @@ void sol(int floor, int door)
 
     for(int i=1;i<=floor;i++)
     {
-        for(int j=1;j<door+1;j++)
+        for(int j=1;j<door+1s;j++)
         {
             for(int k=1;k<=j;k++)
                 arr[i][j]+=arr[i-1][k];
