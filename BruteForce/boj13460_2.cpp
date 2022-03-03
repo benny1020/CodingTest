@@ -3,7 +3,7 @@
 using namespace std;
 int target_x, target_y, red_x, red_y, blue_x, blue_y;
 int n,m;
-int maxx = -1;
+int minn = 11;
 /*
  0 up
  1 down
@@ -130,11 +130,12 @@ void go(char ** arr, int direction,int cur)
     if(cur>10)
         return;
     if(direction == 0) { //x--
-        run(arr,0)
+        run(arr,0);
         if(check(arr) == 0) {
-
+            go(arr,2,cur+1);
+            go(arr,3,cur+1);
         }else if(check(arr) == 1) {
-
+            return;
         }else {
             if(minn > cur+1) {
                 minn=cur+1;
