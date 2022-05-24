@@ -1,0 +1,7 @@
+.vscode
+.idea
+a.out
+*.pyc
+.ftpconfig
+*.iml
+*.dSYM

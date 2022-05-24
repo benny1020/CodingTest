@@ -6,6 +6,10 @@
         "memory": "cpp",
         "algorithm": "cpp",
         "vector": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "__locale": "cpp",
+        "__string": "cpp",
+        "string": "cpp",
+        "string_view": "cpp"
     }
 }
