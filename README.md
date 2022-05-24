@@ -13,3 +13,11 @@
 |:------:|:----:|:---------:|
 | <img height="25px" width="25px" src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg"/> | [2960](https://www.acmicpc.net/problem/11048) | [이동하기](https://www.acmicpc.net/problem/11048) |
 | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/9.svg"/> | [9084](https://www.acmicpc.net/problem/11060) | [점프점프](https://www.acmicpc.net/problem/11060) |
+
+## 2022/05/24
+
+| 난이도 | 번호 | 문제 이름 |
+|:------:|:----:|:---------:|
+| <img height="25px" width="25px" src="https://d2gd6pc034wcta.cloudfront.net/tier/6.svg"/> | [5635](https://www.acmicpc.net/problem/5635) | [생일](https://www.acmicpc.net/problem/5635) |
+| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/5.svg"/> | [1977](https://www.acmicpc.net/problem/1977) | [완전제곱수](https://www.acmicpc.net/problem/1977) |
+| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/5.svg"/> | [11098](https://www.acmicpc.net/problem/11098) | [첼시를 도와줘!](https://www.acmicpc.net/problem/11098) |
