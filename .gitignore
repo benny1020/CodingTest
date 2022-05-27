@@ -5,3 +5,4 @@ a.out
 .ftpconfig
 *.iml
 *.dSYM
+.DS_Store
