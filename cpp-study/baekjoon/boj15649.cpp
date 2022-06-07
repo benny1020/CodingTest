@@ -1,36 +1,33 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
-int n,m;
-void go(int * arr, int cnt,int cur) {
-    if(cnt==m)
-    {
-        for(int i=0;i<n;i++){
-            if(arr[i] == 1)
-                cout << i+1 << " ";
+int n, m;
+vector<int> arr(9);
+bool visited[9]={0,};
+void go(int cnt) {
+    if(cnt == m) {
+        for(int i=0;i<m;i++)
+            cout << arr[i] << " ";
+        cout << '\n';
+    }
+
+    for(int i=1;i<=n;i++) {
+        if(!visited[i]) {
+            visited[i]=true;
+            arr[cnt]=i;
+            go(cnt+1);
+            visited[i]=false;
         }
-        cout << endl;
-        return;
+
     }
-    if(cur == n) {
-        return;
-    }
-    arr[cur] = 1;
-    go(arr,cnt+1,cur+1);
-    arr[cur] = 0;
-    go(arr,cnt,cur+1);
+
+
 
 }
-
 int main(void) {
-
     cin >> n >> m;
-
-    int * arr = new int[n];
-    for(int i=0;i<n;i++)
-        arr[i] = 0;
-
-    go(arr,0,0);
-
+    go(0);
+    return 0;
 }
