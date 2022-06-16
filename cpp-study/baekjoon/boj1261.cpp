@@ -48,6 +48,8 @@ int main(void) {
                 minn = p.count;
         }
 
+
+
         if(visit[p.x][p.y] != 0 && visit[p.x][p.y] <= p.count) {
             //cout << p.x << " "<<p.y << " "<<p.count << endl;
             continue;
