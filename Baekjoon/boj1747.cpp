@@ -2,13 +2,10 @@
 #include <string>
 using namespace std;
 
-#define MAX_NUM 1000001
+#define MAX_NUM 2000001
 
 bool isFelindron(int n) {
     string str = to_string(n);
-    if(str.length()%2==0)
-        return false;
-    cout << str.length()/2 << endl;
     for(int i=0;i<str.length()/2;i++){
         if(str[i]!=str[str.length()-1-i])
             return false;
@@ -26,6 +23,7 @@ int main(void) {
 
     arr[0] = false;
     arr[1] = false;
+
     for(int i=2;i<MAX_NUM;i++) {
         if(arr[i] == true) {
             for(int j=2;j<MAX_NUM/i;j++){
@@ -34,7 +32,9 @@ int main(void) {
         }
     }
     int start = n;
-    w
+    while(!(isFelindron(start) && arr[start]==true)) {
+        start = start+1;
+    }
     cout << start << endl;;
     return 0;
 }
