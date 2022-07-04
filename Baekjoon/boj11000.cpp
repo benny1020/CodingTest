@@ -4,10 +4,17 @@
 
 using namespace std;
 
+// 우선순위 큐 이용해서 다시해보기
+
+/*
+
 bool compare(pair<long long int,long long int> p1, pair<long long int,long long int> p2) {
-    if(p1.second == p2.second)
-        return p1.first>p2.first;
-    return p1.second<p2.second;
+    if(p1.first == p2.first)
+        return p1.second>p2.second;
+    return p1.first<p2.first;
+}
+bool compare2(pair<long long int, long long int> p1, pair<long long int, long long int> p2 ) {
+    return p1.second > p2.second;
 }
 
 int main(void) {
@@ -22,6 +29,8 @@ int main(void) {
     }
     sort(cl.begin(),cl.end(),compare);
 
+    //for(int i=0;i<cl.size();i++)
+    //    cout << cl[i].first << " " << cl[i].second << endl;
 
     pair<long long int,long long int> last;
 
@@ -30,17 +39,16 @@ int main(void) {
     arr.push_back(cl[0]);
     cnt = 1;
     for(int i=1;i<cl.size();i++) {
-        for(int j=0;j<arr.size();j++){
-            if(arr[j].second<=cl[i].first) {
-                arr[j] = cl[i];
-                break;
-            }
-            if(j==arr.size()-1) {
-                arr.push_back(cl[i]);
-                break;
-            }
+        if(arr[0].second<=cl[i].first) {
+            arr[0] = cl[i];
+            break;
+        }else {
+            arr.push_back(cl[i]);
+            sort(arr.begin(),arr.end(),compare2);
         }
     }
     cout << arr.size() << endl;
     return 0;
 }
+
+*/
